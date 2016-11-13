@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head ng-app="LunchCheck">
+<head >
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +12,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Module 1 Devoir</title>
 </head>
-<body>
+<body ng-app="LunchCheck">
      <div class="container" ng-controller="LunchCheckController"> 
          
          <div class="row">
               
-              <div class=" col-md-6 col-md-offset-3 ">
+              <div class=" col-md-6 ">
                      <input type="text" 
                             name=""  
                             class="form-control" 
                             value="Enter a list comma-separated items they usually eat for lunch"
                             ng-model="items" >
-                     <button type="button" class="btn btn-default">Check If Too Much</button>
+              </div>
+              
+              <div class="col-md-3 ">
+                  <button type="button" class="btn btn-success">Check If Too Much</button>
+              </div>
+                            
+                     
                     <p>
                     </p>  
               </div>
