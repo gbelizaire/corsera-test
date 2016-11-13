@@ -10,12 +10,13 @@
    function LunchCheckCtrl($scope){
        $scope.items ="Mais, du riz, pois, manioc";
        console.log('Je suis la ');
-       $scope.message ="";
+       $scope.message ="Test...";
        $scope.listItems =[];
 
 
       // function CheckIfTooMuch
-      $scope.CheckIfTooMuch= function(){
+      $scope.CheckIfTooMuch = function(){
+       console.log($scope.items);
         $scope.message = $scope.items.split(",").length;
       }
 
