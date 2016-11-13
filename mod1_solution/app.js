@@ -17,10 +17,10 @@
       // function CheckIfTooMuch
       $scope.CheckIfTooMuch = function(){
        console.log($scope.items);
-        $scope.listItems = $scope.items.split(",");
+        $scope.message = $scope.items.split(",").length;
         
-        console.log( $scope.listItems.length);
-        $scope.message = $scope.listItems.length;
+      //  console.log( $scope.listItems.length);
+     //   $scope.message = $scope.listItems.length.toString();
       }
 
    }
