@@ -10,10 +10,8 @@
        $scope.message ="Test...";
        $scope.nbItems = 0;
        $scope.CheckIfTooMuch_Click = false;
-      
 
-
-      // function CheckIfTooMuch
+    // function CheckIfTooMuch
       $scope.CheckIfTooMuch = function(){
           $scope.CheckIfTooMuch_Click = true;
        console.log($scope.items);
