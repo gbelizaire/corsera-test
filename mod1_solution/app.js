@@ -5,10 +5,19 @@
    .controller('LunchCheckController',LunchCheckCtrl);
 
 
-   
+
    LunchCheckCtrl.$inject =['$scope'];
    function LunchCheckCtrl($scope){
-      console.log('Je suis la ');
+       $scope.items ="Mais, du riz, pois, manioc";
+       console.log('Je suis la ');
+       $scope.message ="";
+       $scope.listItems =[];
+
+
+      // function CheckIfTooMuch
+      function CheckIfTooMuch(){
+        $scope.message = $scope.items.split(",").length;
+      }
 
    }
    
