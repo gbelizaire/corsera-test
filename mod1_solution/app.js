@@ -10,7 +10,7 @@
        $scope.message ="Test...";
        $scope.nbItems = -1;
        $scope.CheckIfTooMuch_Click = false;
-       $cope.couleurBordure = -1; 
+       $scope.couleurBordure = -1; 
        //$scope.c
 
     // function CheckIfTooMuch
