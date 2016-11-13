@@ -5,6 +5,7 @@
    .controller('myFirstController',function($scope){
        $scope.nom ="Belizaire";
        $scope.prenom = "Gerald";
+       console.log('Je suis la');
    });
    
    
