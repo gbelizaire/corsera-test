@@ -7,12 +7,18 @@
    LunchCheckCtrl.$inject =['$scope'];
    function LunchCheckCtrl($scope){
        $scope.items ="";
-       $scope.message ="Test...";
+       $scope.message ="...";
        $scope.nbItems = -1;
        $scope.CheckIfTooMuch_Click = false;
        $scope.couleurBordure = -1; 
-       //$scope.c
-
+       
+    // Fonction pour reinnitialiser les variables
+     $scope.reInit =function(){
+          $scope.message ="...";
+          $scope.nbItems = -1;
+          $scope.CheckIfTooMuch_Click = false;
+          $scope.couleurBordure = -1; 
+     }
     // function CheckIfTooMuch
       $scope.CheckIfTooMuch = function(){
           $scope.CheckIfTooMuch_Click = true;
@@ -47,8 +53,7 @@
        * */
       function NombreItems(){
          var i =0;
-         // return $scope.items.split(",").length;
-        $scope.items.split(",").forEach(function(Item){
+           $scope.items.split(",").forEach(function(Item){
             if(Item.trim().length>0){
                 i++;
             }

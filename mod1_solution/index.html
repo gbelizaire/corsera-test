@@ -24,6 +24,8 @@
                             class="form-control" 
                             placeholder="Enter a list comma-separated items they usually eat for lunch"
                             ng-model="items"
+                            ng-focus="reInit()"
+                            ng-blur="CheckIfTooMuch()"
                             ng-class=" couleurBordure <= 0 ? 'blanc': couleurBordure == 1 ? 'vert':'rouge' " >
               </div>
               
