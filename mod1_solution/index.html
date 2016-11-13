@@ -24,7 +24,7 @@
                             class="form-control" 
                             placeholder="Enter a list comma-separated items they usually eat for lunch"
                             ng-model="items"
-                            ng-class="nbItems > 0  ? 'vert':'rouge'" >
+                            ng-class=" couleurBordure <= 0 ? 'blanc': couleurBordure == 1 ? 'vert':'rouge' " >
               </div>
               
               <div class="col-md-3 ">

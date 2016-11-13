@@ -10,6 +10,8 @@
        $scope.message ="Test...";
        $scope.nbItems = -1;
        $scope.CheckIfTooMuch_Click = false;
+       $cope.couleurBordure = -1; 
+       //$scope.c
 
     // function CheckIfTooMuch
       $scope.CheckIfTooMuch = function(){
@@ -19,14 +21,30 @@
             $scope.nbItems =NombreItems();
             if($scope.nbItems<=3){
                 $scope.message = "Enjoy!";
+                $cope.couleurBordure = 1; // vert
+                
             }else{
                 $scope.message = "Too much!";
+                $cope.couleurBordure = 1; //vert
+                
             }
          }else{
               $scope.message = "Please enter data first"; 
                $scope.nbItems = 0;
+                $cope.couleurBordure = 2; //rouge
          }  
       }
+
+      /**
+       *  fonction pour colorier la border du champ input
+       */
+        function colorierBordure(){
+
+        } 
+
+      /**
+       *  fonction retournant le nombre d'Items' 
+       * */
       function NombreItems(){
          var i =0;
          // return $scope.items.split(",").length;

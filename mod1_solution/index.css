@@ -9,3 +9,7 @@
     border-width: 2px;
     border-color: green;
 }
+
+.blanc{
+    border-style: none;
+}
