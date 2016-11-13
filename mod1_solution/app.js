@@ -19,7 +19,8 @@
        console.log($scope.items);
         $scope.listItems = $scope.items.split(",");
         
-        console.log( $scope.listItems)
+        console.log( $scope.listItems.length);
+        $scope.message = $scope.listItems.length;
       }
 
    }
