@@ -30,7 +30,7 @@
          var i =0;
          // return $scope.items.split(",").length;
         $scope.items.split(",").forEach(function(Item){
-            if(Item.strim().empty.length>0){
+            if(Item.trim().empty.length>0){
                 i++;
             }
         });
