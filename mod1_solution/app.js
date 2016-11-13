@@ -17,15 +17,16 @@
       $scope.CheckIfTooMuch = function(){
           $scope.CheckIfTooMuch_Click = true;
        console.log($scope.items);
-       $scope.nbItems =NombreItems();
-            if($scope.nbItems == 0){
-                $scope.message = "Please enter data first";
-            } else if($scope.nbItems<=3){
+         if($scope.items.length>0){ 
+            $scope.nbItems =NombreItems();
+            if($scope.nbItems<=3){
                 $scope.message = "Enjoy!";
             }else{
                 $scope.message = "Too much!";
             }
-            
+         }else{
+              $scope.message = "Please enter data first"; 
+         }  
       }
       function NombreItems(){
           return $scope.items.split(",").length;
