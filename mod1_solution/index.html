@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>Module 1 Devoir</title>
 </head>
 <body ng-app="LunchCheck" >
@@ -22,7 +23,8 @@
                             name=""  
                             class="form-control" 
                             placeholder="Enter a list comma-separated items they usually eat for lunch"
-                            ng-model="items" >
+                            ng-model="items"
+                            ng-class="nbItems > 0  ? 'rouge':'vert'" >
               </div>
               
               <div class="col-md-3 ">

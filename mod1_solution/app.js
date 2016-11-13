@@ -8,7 +8,7 @@
    function LunchCheckCtrl($scope){
        $scope.items ="Mais, du riz, pois, manioc";
        $scope.message ="Test...";
-       $scope.nbItems = 0;
+       $scope.nbItems = -1;
        $scope.CheckIfTooMuch_Click = false;
 
     // function CheckIfTooMuch
@@ -24,6 +24,7 @@
             }
          }else{
               $scope.message = "Please enter data first"; 
+               $scope.nbItems = 0;
          }  
       }
       function NombreItems(){
