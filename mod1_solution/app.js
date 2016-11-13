@@ -27,7 +27,14 @@
          }  
       }
       function NombreItems(){
-          return $scope.items.split(",").length;
+         var i =0;
+         // return $scope.items.split(",").length;
+        $scope.items.split(",").forEach(function(Item){
+            if(Item.strim().empty.length>0){
+                i++;
+            }
+        });
+        return i;
       }
 
    }
