@@ -6,7 +6,7 @@
 
    LunchCheckCtrl.$inject =['$scope'];
    function LunchCheckCtrl($scope){
-       $scope.items ="Mais, du riz, pois, manioc";
+       $scope.items ="";
        $scope.message ="Test...";
        $scope.nbItems = -1;
        $scope.CheckIfTooMuch_Click = false;
