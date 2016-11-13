@@ -25,13 +25,13 @@
                 
             }else{
                 $scope.message = "Too much!";
-                $cope.couleurBordure = 1; //vert
+                $scope.couleurBordure = 1; //vert
                 
             }
          }else{
               $scope.message = "Please enter data first"; 
                $scope.nbItems = 0;
-                $cope.couleurBordure = 2; //rouge
+                $scope.couleurBordure = 2; //rouge
          }  
       }
 
