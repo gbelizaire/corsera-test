@@ -21,7 +21,7 @@
             $scope.nbItems =NombreItems();
             if($scope.nbItems<=3){
                 $scope.message = "Enjoy!";
-                $cope.couleurBordure = 1; // vert
+                $scope.couleurBordure = 1; // vert
                 
             }else{
                 $scope.message = "Too much!";
