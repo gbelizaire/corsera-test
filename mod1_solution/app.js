@@ -15,7 +15,7 @@
 
 
       // function CheckIfTooMuch
-      function CheckIfTooMuch(){
+      $scope.CheckIfTooMuch= function(){
         $scope.message = $scope.items.split(",").length;
       }
 
