@@ -18,6 +18,7 @@
       $scope.CheckIfTooMuch = function(){
        console.log($scope.items);
         console.log( $scope.items.split(",").length);
+        $scope.message = $scope.listItems.length.toString();
         
       //  console.log( $scope.listItems.length);
      //   $scope.message = $scope.listItems.length.toString();
