@@ -23,6 +23,10 @@
                       <!-- pour la liste 'To Buy'  -->
                        <div class="col-md-6" ng-controller="ToBuyController  as toBuyCtrl">
                             <!--    {{toBuyCtrl.message}}  -->
+
+                             <span ng-if="toBuyCtrl.ListeArticles.length == 0">
+                               Everything is bought!
+                             </span> 
                              <div ng-repeat="toBuy in toBuyCtrl.ListeArticles">
                                      {{"Buy "+toBuy.quantity+"   "+toBuy.name}} 
                                      <button class="btn btn-primary" ng-click="toBuyCtrl.BuyThisItem($index)">Bought</button><br/>
@@ -39,11 +43,10 @@
                            <span ng-if="AlreadyBoughtCtrl.ListeArticlesAchetes.length == 0">
                              Nothing bought yet
                            </span>  
-                           {{AlreadyBoughtCtrl.ListeArticlesAchetes | json }}     
-                           <br/>                    
+                                            
                           <div>
                               <div ng-repeat="boughtItems in AlreadyBoughtCtrl.ListeArticlesAchetes">
-                                     {{ boughtItems | json}}
+                                     
                                      {{"Bought "+boughtItems.quantity+"   "+boughtItems.name}} <br/>
                              </div>
                           </div>
