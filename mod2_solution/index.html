@@ -24,7 +24,8 @@
                        <div class="col-md-6" ng-controller="ToBuyController  as toBuyCtrl">
                             <!--    {{toBuyCtrl.message}}  -->
                              <div ng-repeat="toBuy in toBuyCtrl.ListeArticles">
-                                     {{"Buy "+toBuy.quantity+"   "+toBuy.name}} <button class="btn btn-primary" ng-click="BuyThisItem($index)">Bought</button><br/>
+                                     {{"Buy "+toBuy.quantity+"   "+toBuy.name}} 
+                                     <button class="btn btn-primary" ng-click="toBuyCtrl.BuyThisItem($index)">Bought</button><br/>
                              </div>
                           </div>
                      <!-- pour la liste 'To Buy'  --> 
