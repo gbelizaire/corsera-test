@@ -18,7 +18,11 @@
    function ToBuyController (ShoppingListCheckOffService){
     var toBuy = this;
         toBuy.ListeArticles = ShoppingListCheckOffService.ListItemsToBuy();
-   toBuy.message = "tout est ok";
+       toBuy.message = "tout est ok";
+    /** Fonction BuyThisItem */
+     toBuy.BuyThisItem = function(index){
+        ShoppingListCheckOffService.BuyThisItem(index);
+     }
 
    }
 
@@ -54,7 +58,7 @@
          };
           Shop.tobuyItems.push(item); 
        } ;
-
+     
        /** fonction ListItemsToBuy */
        Shop.ListItemsToBuy  = function(){
            return Shop.tobuyItems;
@@ -64,6 +68,19 @@
        Shop.ListItemsBought  = function(){
            return Shop.boughtItems;
        };  
+
+       /** fonction retournant l"item a un index donnee */
+
+       Shop.getItemAtIndex= function(index){
+          return Shop.tobuyItems[index];
+       }
+
+       /** fonction  BuyThisItem */
+       Shop.BuyThisItem = function(ItemIndex){
+           Shop.tobuyItems = Shop.tobuyItems.splice(ItemIndex,1);
+           // Ajouter dans boughtItems
+           Shop.boughtItems.push(Shop.getItemAtIndex(ItemIndex));
+      }
 
     }
 
