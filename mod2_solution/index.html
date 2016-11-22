@@ -41,6 +41,7 @@
                            </span>                           
                           <div>
                               <div ng-repeat="boughtItems in AlreadyBoughtCtrl.ListeArticlesAchetes">
+                                     {{ boughtItems | json}}
                                      {{"Bought "+boughtItems.quantity+"   "+boughtItems.name}} <br/>
                              </div>
                           </div>
