@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Module 2 Devoir</title>
+</head>
+<body ng-app="ShoppingListCheckOff" >
+
+     <!-- Creation de controlleur principal -->
+          <div class="container">
+              <!-- Creation d''une ligne  -->
+                <div class="row">
+                     <!-- Creation de 2 colonnes de taille 6 chacune -->
+                      <!-- pour la liste 'To Buy'  -->
+                       <div class="col-md-6"></div>
+                     <!-- pour la liste 'To Buy'  --> 
+
+                  <!-- #################################################### -->               
+                     
+                      <!-- pour la liste 'Already Bought'  -->
+                          <div class="col-md-6" ng-controller="ToBuyController  as toBuy">
+                             <div ng-repeat="toby in toBuy.ListeArticles">
+                                 {{toby.message}} <br/>
+                             </div>
+                          </div>
+                      <!-- pour la liste 'Already Bought'  -->
+                        
+                     <div class="col-md-6" ng-controller="AlreadyBoughtController as AlreadyBought ">
+
+
+                     </div>
+                     
+
+                </div>
+             <!-- fin de ligne -->
+          </div>
+     <!-- Fin Module 2 -->
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="angular.min.js"> </script>
+    <script src="app.js"></script>
+</body>
+</html>
