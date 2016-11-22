@@ -15,7 +15,7 @@
     *  Creation du premier controlleur
     */
    ToBuyController.$inject= ['ShoppingListCheckOffService'];
-   function ToBuyController (){
+   function ToBuyController (ShoppingListCheckOffService){
     var toBuy = this;
         toBuy.ListeArticles = ShoppingListCheckOffService.ListItemsToBuy();
    toBuy.message = "tout est ok";
@@ -26,7 +26,7 @@
     *  Creation du sceond controlleur
     */  
     AlreadyBoughtController.$inject= ['ShoppingListCheckOffService'];
-    function AlreadyBoughtController(){
+    function AlreadyBoughtController(ShoppingListCheckOffService){
        var alreadyBought = this;
        alreadyBought.ListeArticles =[];
     }
