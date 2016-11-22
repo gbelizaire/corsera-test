@@ -38,7 +38,9 @@
                      <div class="col-md-6" ng-controller="AlreadyBoughtController as AlreadyBoughtCtrl">
                            <span ng-if="AlreadyBoughtCtrl.ListeArticlesAchetes.length == 0">
                              Nothing bought yet
-                           </span>                           
+                           </span>  
+                           {{AlreadyBoughtCtrl.ListeArticlesAchetes | json }}     
+                           <br/>                    
                           <div>
                               <div ng-repeat="boughtItems in AlreadyBoughtCtrl.ListeArticlesAchetes">
                                      {{ boughtItems | json}}
