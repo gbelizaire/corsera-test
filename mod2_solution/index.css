@@ -1,0 +1,17 @@
+.rouge{
+    border-style: solid;
+    border-width: 2px;
+    border-color:red;
+    
+}
+.vert{
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+}
+
+.blanc{
+    border-style: solid;
+    border-width: 1px;
+    border-color:lightblue
+}
