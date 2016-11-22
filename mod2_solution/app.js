@@ -51,11 +51,11 @@
        Shop.boughtItems = [];  
 
        /** Fonction AddToBoughtItems */
-       Shop.AddToBoughtItems = function(item , quantity){
-         var item ={
+       Shop.AddToBoughtItems = function(item){
+        /* var item ={
              name:item,
              quantity :quantity
-         };
+         };*/
           Shop.tobuyItems.push(item); 
        } ;
      
@@ -77,9 +77,12 @@
 
        /** fonction  BuyThisItem */
        Shop.BuyThisItem = function(ItemIndex){
+          /*
            Shop.tobuyItems = Shop.tobuyItems.splice(ItemIndex,1);
            // Ajouter dans boughtItems
            Shop.boughtItems.push(Shop.getItemAtIndex(ItemIndex));
+           */
+            Shop.AddToBoughtItems(Shop.tobuyItems.splice(ItemIndex,1));
       }
 
     }
