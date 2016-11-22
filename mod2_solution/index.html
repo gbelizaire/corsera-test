@@ -24,7 +24,7 @@
                        <div class="col-md-6" ng-controller="ToBuyController  as toBuyCtrl">
                                {{toBuyCtrl.message}}
                              <div ng-repeat="toBuy in toBuyCtrl.ListeArticles">
-                                     {{toBuyCtrl.message}} <br/>
+                                     {{"Buy "+toBuy.quantity+"   "+toBuy.name}} <br/>
                              </div>
                           </div>
                      <!-- pour la liste 'To Buy'  --> 
