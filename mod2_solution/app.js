@@ -56,7 +56,7 @@
              name:item,
              quantity :quantity
          };*/
-          Shop.tobuyItems.push(item); 
+          Shop.boughtItems.push(item); 
        } ;
      
        /** fonction ListItemsToBuy */
