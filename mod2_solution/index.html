@@ -22,7 +22,7 @@
                      <!-- Creation de 2 colonnes de taille 6 chacune -->
                       <!-- pour la liste 'To Buy'  -->
                        <div class="col-md-6" ng-controller="ToBuyController  as toBuyCtrl">
-                               {{toBuyCtrl.message}}
+                            <!--    {{toBuyCtrl.message}}  -->
                              <div ng-repeat="toBuy in toBuyCtrl.ListeArticles">
                                      {{"Buy "+toBuy.quantity+"   "+toBuy.name}} <button class="btn btn-primary" ng-click="BuyThisItem($index)">Bought</button><br/>
                              </div>
