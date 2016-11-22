@@ -14,7 +14,7 @@
    /**
     *  Creation du premier controlleur
     */
-   tobuyController.$inject= ['ShoppingListCheckOffService'];
+   ToBuyController.$inject= ['ShoppingListCheckOffService'];
    function ToBuyController (){
     var toBuy = this;
         toBuy.ListeArticles = ShoppingListCheckOffService.ListItemsToBuy();
