@@ -28,7 +28,7 @@
     AlreadyBoughtController.$inject= ['ShoppingListCheckOffService'];
     function AlreadyBoughtController(ShoppingListCheckOffService){
        var alreadyBought = this;
-       alreadyBought.ListeArticles =[];
+       alreadyBought.ListeArticlesAchetes =ShoppingListCheckOffService.ListItemsBought();
     }
 
 
@@ -37,11 +37,11 @@
     */
     function ShoppingListCheckOffService(){
        var Shop = this;
-       Shop.tobuyItems =  [{name: "Chemise", quantity: 10} ,
-                              {name: "T-Shirt", quantity: 10 },
-                              {name: "Pantalon", quantity: 10 },
+       Shop.tobuyItems =  [{name: "Chemise(s)", quantity: 10} ,
+                              {name: "T-Shirt(s)", quantity: 10 },
+                              {name: "Pantalon(s)", quantity: 10 },
                               {name: "Anneaux", quantity: 10 },
-                              {name: "Chaussure", quantity: 10 }
+                              {name: "Pair(s) de Chaussure", quantity: 10 }
                               ];
 
        Shop.boughtItems = [];  
@@ -60,6 +60,10 @@
            return Shop.tobuyItems;
        };                
 
+        /** fonction ListItemsToBuy */
+       Shop.ListItemsBought  = function(){
+           return Shop.boughtItems;
+       };  
 
     }
 

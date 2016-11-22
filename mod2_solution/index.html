@@ -34,8 +34,10 @@
 
                       <!-- pour la liste 'Already Bought'  -->
                         
-                     <div class="col-md-6" ng-controller="AlreadyBoughtController as AlreadyBought ">
-
+                     <div class="col-md-6" ng-controller="AlreadyBoughtController as AlreadyBoughtCtrl">
+                       <span ng-if="AlreadyBoughtCtrl.ListeArticlesAchetes.length == 0">
+                             Nothing bought yet
+                           </span>                           
 
                      </div>
                      
