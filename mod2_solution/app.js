@@ -82,7 +82,7 @@
            // Ajouter dans boughtItems
            Shop.boughtItems.push(Shop.getItemAtIndex(ItemIndex));
            */
-            Shop.AddToBoughtItems(Shop.tobuyItems.splice(ItemIndex,1));
+            Shop.AddToBoughtItems(Shop.tobuyItems.splice(ItemIndex,1)[0]);
             console.log(Shop.boughtItems);
       }
 
