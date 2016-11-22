@@ -53,13 +53,16 @@
              quantity :quantity
          };
           Shop.tobuyItems.push(item); 
-       } 
+       } ;
 
        /** fonction ListItemsToBuy */
        Shop.ListItemsToBuy  = function(){
            return Shop.tobuyItems;
-       }                  
+       };                
 
 
     }
+
+
+
 })();
