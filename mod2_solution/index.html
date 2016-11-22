@@ -21,17 +21,16 @@
                 <div class="row">
                      <!-- Creation de 2 colonnes de taille 6 chacune -->
                       <!-- pour la liste 'To Buy'  -->
-                       <div class="col-md-6"></div>
+                       <div class="col-md-6" ng-controller="ToBuyController  as toBuy">
+                             <div ng-repeat="toBuy in toBuy.ListeArticles">
+                                 {{toBuy.message}} <br/>
+                             </div>
+                          </div>
                      <!-- pour la liste 'To Buy'  --> 
 
                   <!-- #################################################### -->               
                      
-                      <!-- pour la liste 'Already Bought'  -->
-                          <div class="col-md-6" ng-controller="ToBuyController  as toBuy">
-                             <div ng-repeat="toby in toBuy.ListeArticles">
-                                 {{toby.message}} <br/>
-                             </div>
-                          </div>
+
                       <!-- pour la liste 'Already Bought'  -->
                         
                      <div class="col-md-6" ng-controller="AlreadyBoughtController as AlreadyBought ">
