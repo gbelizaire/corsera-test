@@ -1,0 +1,17 @@
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                 <ul class="list-group">
+                                     <span class="text-center trouve rouge" data-ng-if="(dirCtrl.found.length == 0 && dirCtrl.haveBeenClicked == true)"> Nothing found  </span>
+                                     <span class="text-center trouve" data-ng-if="dirCtrl.found.length > 0"> {{dirCtrl.found.length}} occurence(s) trouv&eacute;e(s) </span>
+                                    <li class="list-group-item" data-ng-repeat="l in dirCtrl.found">
+                                          <h4 class="text-center"> {{l.name }} - ( {{l.short_name}} ) 
+                                              <button type="button" class="btn btn-danger btn-xs pull-right"
+                                               data-ng-click="dirCtrl.remove({index:$index})">Don't want this one!</button> 
+                                          </h4>
+                                          <span class="description"> {{l.description}} </span>
+ 
+                                        </li>
+                                    
+                                 </ul> 
+
+
+</div>

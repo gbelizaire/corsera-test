@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Module 3 Solution</title>
+</head> 
+<body data-ng-app="NarrowItDownApp">
+
+    <div class="container">
+          <div class="row" data-ng-controller="NarrowItDownController as NarCtrl">
+
+                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                        <div class="row" >
+
+                                 <div class="panel panel-default">
+
+                                     <div class="panel-heading">
+                                           <h3 class="panel-title text-center">a much simplified search of the menu item descriptions </h3>
+                                     </div>
+
+                                     <div class="panel-body">
+                                             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                <input type="search" 
+                                                       id="input1/(\w+)/\u\1/g" 
+                                                       class="form-control"
+                                                       data-ng-model="NarCtrl.searchTerm"
+                                                       placeholder="Enter your search term"
+                                                       data-ng-blur="NarCtrl.getMatchedMenuItems(NarCtrl.searchTerm)"
+                                                       data-ng-focus="NarCtrl.Init()">
+                                            </div>
+
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <button type="button" class="btn btn-sm btn-success text-center" data-ng-click="NarCtrl.getMatchedMenuItems(searchTerm)">Narrow It Down For Me!</button>
+                                            </div>
+                                     </div>
+
+                               </div>
+     
+                        </div> <!-- premiere ligne de la premiere colonne -->
+
+                         <!--  une autre ligne pour afficher le resultat de la recherche-->
+                         <div class="row">
+                            <found-items found="NarCtrl.found" clicked="NarCtrl.Buttonclicked" on-remove="NarCtrl.SuppimerCetElement(index)"  ></found-items>                    
+                         </div> <!-- Fin de la deuxieme ligne -->
+
+                 </div> <!-- fin de colonne -->
+                   
+          </div>  <!-- fin de premiere ligne - row -->  
+    </div>  <!-- fin du container -->
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="angular.min.js"> </script>
+    <script src="app.js"></script>
+</body>
+</html>
