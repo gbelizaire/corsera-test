@@ -1,0 +1,39 @@
+ <div class="row">
+     <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                   
+               <!-- </div>
+            
+               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                    --> 
+                     <div class="panel panel-default">
+
+                         <div class="panel-heading">
+                            <h3 class="panel-title text-center">D&eacute;partements</h3>
+                         </div>
+                        <div class="panel-body">
+                            <div ng-controller="eval_controller as eval_Ctrl">
+                                   
+                                <p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" data-ng-repeat="d in eval_Ctrl.lesDepts" > 
+                                         {{d.code }} - {{d.libelle}} <span class="pull-right">
+                                         <button type="button" class="btn btn-success btn-xs glyphicon glyphicon-check" data-ng-click="eval_Ctrl.selectionner(d)"></button>
+                                         </span> 
+                                        </li>
+                                    </ul>
+                                </p>    
+                            </div>
+                            
+                          </div>
+                      
+                      </div>
+                     
+                     
+                     
+                      
+
+
+
+     </div>
+               
+</div>
