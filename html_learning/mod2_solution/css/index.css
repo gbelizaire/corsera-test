@@ -50,7 +50,7 @@ section{
        display: block;
        float: left;
        position:relative;
-       width:47%;
+       width:46%;
        margin: 14px;
     }
     section:nth-child(4n){
