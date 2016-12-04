@@ -50,11 +50,11 @@ section{
        display: block;
        float: left;
        position:relative;
-       width:45%;
-       margin: 14px;
+       width:46%;
+       margin: 14px;                
     }
-    section:nth-child(4n){
-         width:96%;
+    section:nth-child(3n){
+         width:95%;
      } 
 }
 /* ############ mobile view ########### */
