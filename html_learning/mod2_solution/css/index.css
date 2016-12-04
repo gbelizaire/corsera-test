@@ -50,19 +50,20 @@ section{
        display: block;
        float: left;
        position:relative;
-       width:45%;
+       width:46%;
        margin: 14px;                
     }
-    /*section:nth-child(3n){
+    
+    /*section:nth-child(3){
          width:95%;
      } */
      section.touteligne{width:95%;}
 }
 /* ############ mobile view ########### */
 @media(min-width:300px) and (max-width:767px){
-   *{
+   /**{
        clear: both;
-   }
+   }*/
    section{
        display: block;
        float: left;
